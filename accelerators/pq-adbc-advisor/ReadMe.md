@@ -44,7 +44,7 @@ The opt-out is persisted across kernel restarts.
 1. Download `pq-adbc-advisor-starter.ipynb` from this folder and import it into a Fabric Workspace.
 2. Attach the notebook to the workspace you want to inventory.
 3. Run the notebook top-to-bottom. It will:
-   - `%pip install pq-adbc-advisor` into the session
+   - `%pip install git+https://github.com/MichaelaIsaacs/pq-adbc-advisor.git@main` into the session (installs the latest bug-bashed v0.3.6 build directly from source; a PyPI release will follow)
    - Call `scan_workspace()`
    - Render the impact report inline
    - Save an HTML copy of the report to the default lakehouse if one is attached
